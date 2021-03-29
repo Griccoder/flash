@@ -1,0 +1,83 @@
+{
+    "broadcast":
+    {
+        "path":"/BROADCAST",
+        "sever":{
+            "host":"172.22.86.96",
+            "user":"wxll",
+            "password":"eab",
+            "database":"VCATSResults",
+            "table":"broadcast_set",
+            "check_time":20,
+            "device_col":"device_3"  
+        }
+    },
+    "result":
+    {
+        "path":"/RESULT/JSON/SAV",
+        "ok_path":"/RESULT/JSON/OK",
+        "nok_path":"/RESULT/JSON/NOK",
+        "vcats_path":"/RESULT/VCATS",
+        "vcats_ok_path":"/RESULT/VCATS/ok",
+        "vcats_nok_path":"/RESULT/VCATS/nok"
+    },
+    "mysql_info":
+    {
+        "host":"localhost",
+        "user":"root",
+        "passwd":"password",
+        "db":"json",
+        "charset":"utf8" 
+    },
+    "image":
+    {
+        "path":"/IMAGE",
+        "type":"2",
+        "order":"VGM,IGM",
+        "check_memory":"sw_signature_dev,sw_signature",
+        "sbl_type":"SBL,"     
+    },
+    "DEVICE":
+    {
+        "Cell":"IFLEXPLUS_04",
+        "SWVer":"4.0.0",
+        "DCRev":"SWDL",
+        "sudo_password":"eab2020",
+        "server_ip_address":"172.22.86.94",
+        "server_file_address":"172.22.86.94/vcats",
+        "server_user":"vcatstester",
+        "server_password":"TestVcats123",
+        "server_results_path":"/Results",
+        "vcats_server_mount_path":"/mnt/Windows",
+        "xcats_path":"/logs/xcats file log",
+        "ftp_set":
+        {
+            "port" : 21
+        },
+        "ftp_log":
+        {
+            "upload_path":"/logs/buslog",
+            "upload_nok_path":"/logs/buslog/upload nok",
+            "upload_ok_path":"/logs/buslog/upload ok",
+            "server_log_path":"/vcatstracefiles",
+            "check_time":2
+        },
+        "ftp_image":
+        {
+            "server_file_dic_path":"/CONFIG",
+            "server_file_path":"/FtpImagefiles",
+            "local_image_path":"/IMAGE",
+            "check_time":2
+        }
+
+    },
+    "can":{   
+            "hardware":"pcan",
+            "port1":"PCAN_USBBUS1",
+            "port2":"PCAN_USBBUS2",
+            "bitrate":{ "port1":500000,
+                        "port2":500000
+                        }
+                    }
+
+}
